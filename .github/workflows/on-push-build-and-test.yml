@@ -33,18 +33,6 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
-      - name: Run Unit Tests
-        run: npm test
-
-      - name: Run codacy-coverage-reporter
-        uses: codacy/codacy-coverage-reporter-action@master
-        with:
-          project-token: ${{ secrets.CODACY_CODE_COVERAGE_TOKEN }}
-          coverage-reports: coverage/lcov.info
-
-      - name: Clean Distribution Directory
-        run: npm clean
-
       - name: Build Application
         run: npm build
 
