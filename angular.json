@@ -6,7 +6,7 @@
     "babylon-portal": {
       "projectType": "application",
       "schematics": {
-        "@schematics/angular:component": {
+        "@schematics/angular:component": {q
           "style": "sass",
           "skipTests": true
         },
